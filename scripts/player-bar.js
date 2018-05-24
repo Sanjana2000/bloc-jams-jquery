@@ -19,6 +19,26 @@
     player.playPause(nextSong);
   });
 
+  // Adding previous button.
+
+    $('button#previous').on('click', function() {
+      console.log(player.playState);
+      if (player.playState !== 'playing') {
+        return;
+      }
+
+      const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
+      const previousSongIndex = currentSongIndex - 1;
+      console.log(previousSongIndex);
+      if (previousSongIndex < 0) {
+        return;
+      }
+      const previousSong = album.songs[previousSongIndex];
+      console.log(previousSong);
+      player.playPause(previousSong);
+    });
+
+
   $('#time-control input').on('input', function(event) {
     player.skipTo(event.target.value)
   });
