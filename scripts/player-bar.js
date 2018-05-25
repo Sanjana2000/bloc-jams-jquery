@@ -17,8 +17,7 @@
     const nextSong = album.songs[nextSongIndex];
     player.playPause(nextSong);
   });
-
-// Adding previous button.
+ //Adding Previous Button.
 
   $('button#previous').on('click', function() {
     console.log(player.playState);
