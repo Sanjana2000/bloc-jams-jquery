@@ -8,8 +8,8 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+  color: rgba(146,213,93,.92);
+  font-family: 'cursive';
 }
 
 nav {
@@ -48,15 +48,12 @@ main {
 
 h2.artist {
   font-weight: 100;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0.5rem;
   opacity: 0.9;
 }
 
 #release-info {
-  opacity: 0.5;
+  opacity: 0.8;
   font-size: 0.8rem;
 }
-
-
-
