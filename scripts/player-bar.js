@@ -61,6 +61,14 @@
     player.skipTo(event.target.value)
   });
 
+//assignment20.js.Add volume-control input.
+$('#volume-control input').on('input', function(event) {
+  player.setVolume(event.target.value)
+});
+
+
+
+
   setInterval(() => {
     if (player.playState !== 'playing') {
       return;
